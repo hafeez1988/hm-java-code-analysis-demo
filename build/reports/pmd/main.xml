@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.17.0" timestamp="2020-04-25T15:20:32.457">
+<file name="/Users/mohamedhafeez/Documents/workspace-sts-3.9.10.RELEASE/hm-java-code-analyser-demo/src/main/java/com/hm/demo/HmCodeAnalysisDemo.java">
+<violation beginline="3" endline="12" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.hm.demo" class="HmCodeAnalysisDemo" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="3" endline="12" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="com.hm.demo" class="HmCodeAnalysisDemo" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Header comments are required
+</violation>
+<violation beginline="5" endline="5" begincolumn="31" endcolumn="33" rule="UnusedPrivateField" ruleset="Best Practices" package="com.hm.demo" class="HmCodeAnalysisDemo" variable="abc" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'abc'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="24" endcolumn="34" rule="CommentRequired" ruleset="Documentation" package="com.hm.demo" class="HmCodeAnalysisDemo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Field comments are required
+</violation>
+<violation beginline="7" endline="7" begincolumn="31" endcolumn="40" rule="UnusedPrivateField" ruleset="Best Practices" package="com.hm.demo" class="HmCodeAnalysisDemo" variable="a_123_test" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'a_123_test'.
+</violation>
+<violation beginline="7" endline="7" begincolumn="24" endcolumn="41" rule="CommentRequired" ruleset="Documentation" package="com.hm.demo" class="HmCodeAnalysisDemo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Field comments are required
+</violation>
+<violation beginline="9" endline="11" begincolumn="16" endcolumn="9" rule="CommentRequired" ruleset="Documentation" package="com.hm.demo" class="HmCodeAnalysisDemo" method="_abctttttttttttttttttttttttttttttttttttttttttttttttttt" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+</file>
+<file name="/Users/mohamedhafeez/Documents/workspace-sts-3.9.10.RELEASE/hm-java-code-analyser-demo/src/main/java/com/hm/demo/HmJavaCodeAnalyserDemoApplication.java">
+<violation beginline="7" endline="13" begincolumn="48" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="com.hm.demo" class="HmJavaCodeAnalyserDemoApplication" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="7" endline="13" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="com.hm.demo" class="HmJavaCodeAnalyserDemoApplication" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Header comments are required
+</violation>
+<violation beginline="9" endline="9" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.hm.demo" class="HmJavaCodeAnalyserDemoApplication" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="9" endline="11" begincolumn="23" endcolumn="9" rule="CommentRequired" ruleset="Documentation" package="com.hm.demo" class="HmJavaCodeAnalyserDemoApplication" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.17.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+Public method and constructor comments are required
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

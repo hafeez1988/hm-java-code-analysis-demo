@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+    <module name="TreeWalker">
+
+        <!-- Check for class level comments for all public classes -->
+		<module name="JavadocType">
+			<property name="scope" value="public"/>
+	    </module>
+	
+		<!-- Checks that variables have Java doc comments. -->
+		<!-- <module name="JavadocVariable"/>  -->
+		
+		<!-- Checks for redundant and unused import statements. -->
+		<module name="RedundantImport"/> 
+		<module name="UnusedImports"/>
+		<module name="AvoidStarImport"/>
+		
+		<!-- Checks for naming Conventions. -->
+		<module name="ClassTypeParameterName"/> 
+		<module name="ConstantName"/> 
+		<module name="LocalVariableName"/> 
+		<module name="MemberName"/>
+		<module name="MethodName"/> 
+		<module name="MethodTypeParameterName"/>
+		<module name="PackageName"/>
+		<module name="ParameterName"/>
+		<module name="TypeName"/>
+		<module name="EmptyBlock"/>
+		<module name="TodoComment"/>
+    </module>
+</module>

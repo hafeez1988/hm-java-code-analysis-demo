@@ -1,0 +1,78 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.6.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+	id 'com.github.spotbugs' version '4.0.5'
+}
+
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
+
+group = 'com.hm.demo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
+
+spotbugs {
+	ignoreFailures = true
+	showProgress = true
+	effort = "max"
+	reportLevel = "high"
+}
+
+pmd {
+	ignoreFailures = true
+	pmdTest.enabled = false
+	ruleSets = [
+		'java-basic',
+		'java-braces',
+		'java-clone',
+		'java-codesize',
+		'java-comments',
+		'java-controversial',
+		'java-coupling',
+		'java-design',
+		'java-empty',
+		'java-finalizers',
+		'java-imports',
+		'java-optimizations',
+		'java-strictexception',
+		'java-strings',
+		'java-typeresolution',
+		'java-unnecessary',
+		'java-unusedcode'
+	]
+}
+
+checkstyle {
+	ignoreFailures = true
+	configFile = 'src/main/resources/checkstyle.xml' as File
+}
+
+spotbugsMain {
+	reports {
+		xml.enabled = true
+		html.enabled = true
+	}
+}
+
+tasks.withType(Pmd) {
+	reports {
+		xml.enabled = true
+		html.enabled = true
+	}
+}
